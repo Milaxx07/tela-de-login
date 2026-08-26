@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Tela Login</title>
+</head>
+<body>
+    <main class="container">
+        <!-- 1. Adicionado id="formLogin" -->
+        <form id="formLogin">
+            <h1>Login</h1>
+            
+            <div class="input-box">
+                <!-- 2. Adicionado id="email" e alterado placeholder -->
+                <input id="email" placeholder="E-mail" type="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            
+            <div class="input-box">
+                <!-- 3. Adicionado id="senha" e id="btnSenha" no ícone -->
+                <input id="senha" placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt" id="btnSenha" style="cursor: pointer;"></i>
+            </div>
+
+            <!-- 4. Elemento para exibir mensagens de erro -->
+            <p id="mensagemErro" style="color: #ff4d4d; font-size: 14px; text-align: center; margin-bottom: 10px;"></p>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" id="lembrar">
+                    Lembrar senha
+                </label>
+                <a href="#">Esqueci a senha</a>
+            </div>
+
+            <button type="submit" class="login">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+    </main>
+    
+    <!-- 5. Vinculando o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
